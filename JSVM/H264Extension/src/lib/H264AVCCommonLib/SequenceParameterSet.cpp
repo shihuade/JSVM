@@ -398,7 +398,7 @@ SequenceParameterSet::getBiPred8x8Disabled()  const
 ErrVal
 SequenceParameterSet::xGetLevelLimit( const LevelLimit*& rpcLevelLimit, Int iLevelIdc )
 {
-  ROT ( iLevelIdc > 51 )
+  ROT ( iLevelIdc > 52 )
   rpcLevelLimit = &m_aLevelLimit[iLevelIdc];
   ROFS( rpcLevelLimit->bValid )
   return Err::m_nOK;
